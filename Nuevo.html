@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Medianario – Noticias que te tocan el bolsillo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* 1. RESET & TIPOGRAFÍA */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Roboto,Helvetica,sans-serif;background:#f4f4f4;color:#222;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    /* 2. LAYOUT BÁSICO */
+    header{background:#111;color:#fff;padding:1.2rem}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    nav ul{display:flex;list-style:none;gap:1rem}
+    nav li{font-weight:600}
+    nav a:hover{color:#ffb703}
+    .brand{font-size:1.5rem;font-weight:700;letter-spacing:.03em}
+
+    .hero{background:#005f73;color:#fff;padding:4rem 1.5rem;text-align:center}
+    .hero h1{font-size:2rem;margin-bottom:.5rem}
+    .hero p{opacity:.9}
+
+    main{max-width:1080px;margin:2rem auto;padding:0 1.5rem;display:grid;gap:2rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+
+    article{background:#fff;border-radius:.6rem;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.05);display:flex;flex-direction:column}
+    article img{height:180px;object-fit:cover}
+    article div{padding:1rem}
+    .kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:#d62828;margin-bottom:.4rem}
+    article h2{font-size:1.2rem;margin-bottom:.5rem}
+    article p{font-size:.9rem;opacity:.85;margin-bottom:.8rem}
+    .cta{margin-top:auto;font-weight:600;color:#005f73}
+
+    footer{background:#111;color:#fff;text-align:center;padding:1rem;font-size:.8rem;margin-top:3rem}
+
+    /* 3. COLORES RÁPIDOS POR SECCIÓN */
+    .economia .kicker{color:#ffb703}
+    .politica .kicker{color:#fb8500}
+    .sociedad .kicker{color:#219ebc}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <span class="brand">Medianario</span>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Economía</a></li>
+      <li><a href="#">Política</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Las noticias que afectan <em>a tu cartera</em></h1>
+  <p>Datos claros, formato ágil y llamadas a la acción que invitan a participar.</p>
+</section>
+
+<main>
+  <h2>Últimas historias</h2>
+  <div class="grid">
+    <!-- CARD 1 -->
+    <article class="economia">
+      <img src="https://via.placeholder.com/640x360?text=Alquiler+10%25" alt="">
+      <div>
+        <span class="kicker">ECONOMÍA</span>
+        <h2>Alquiler sube un 10 %: calcula cuánto pagarás</h2>
+        <p>Idealista confirma la mayor subida interanual desde 2007. Abre la calculadora y comparte tu #HipotecaDrama.</p>
+        <a href="alquiler-2025.html" class="cta">Leer más ?</a>
+      </div>
+    </article>
+
+    <!-- CARD 2 -->
+    <article class="politica">
+      <img src="https://via.placeholder.com/640x360?text=C%C3%A1maras+chinas" alt="">
+      <div>
+        <span class="kicker">POLÍTICA</span>
+        <h2>Cámaras vetadas en EE. UU. vigilan edificios oficiales españoles</h2>
+        <p>Hikvision y Dahua operan en bases militares y ministerios pese a la alerta de Washington.</p>
+        <a href="#" class="cta">Leer más ?</a>
+      </div>
+    </article>
+
+    <!-- CARD 3 -->
+    <article class="sociedad">
+      <img src="https://via.placeholder.com/640x360?text=Permiso+19+semanas" alt="">
+      <div>
+        <span class="kicker">SOCIEDAD</span>
+        <h2>Permiso de nacimiento sube a 19 semanas: así te afecta</h2>
+        <p>Nueva ley permite reservar dos semanas para cuando el menor cumpla 8 años.</p>
+        <a href="#" class="cta">Leer más ?</a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  © 2025 Medianario · Hecho en España
+</footer>
+
+</body>
+</html>
